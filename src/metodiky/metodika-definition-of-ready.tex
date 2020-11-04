@@ -1,0 +1,31 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Definition of Ready}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Metodika}
+
+\begin{document}
+
+    \include{title-page}
+
+    \section*{User story}
+
+    \textnormal{User story môže byť označený ako “ready” iba v prípade, že spĺňa všetky nasledujúce kritéria:}
+
+    \begin{itemize}
+        \item User story nie je závislý žiadnou inou story, ktorá sa nebude nachádzať v pripravenom šprinte.
+        \item User story sa môže meniť len do začiatku šprintu. Ako náhle začne šprint a user story sa nachádza v šprinte, nie je možné ju meniť, aby nedošlo k problémom v sprint review.
+        \item User story je jasne definovaný a akceptovaný každým členom tímu. Z opisu musí byť jasné, čo má byť cieľom user story aby každý člen, tímu mal rovnakú predstavu.
+        \item User story musí mať definované akceptačné kritéria a musia byť schválené tímom.
+        \item User story musí byť vždy prediskutovaný so zákazníkom/product ownerom.
+    \end{itemize}
+
+\end{document}

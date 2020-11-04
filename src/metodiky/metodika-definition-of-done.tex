@@ -1,0 +1,56 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Definition of Done}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Metodika}
+
+\begin{document}
+
+    \include{title-page}
+
+    \noindent \textnormal{Z hľadiska efektívneho vývoja je potrebné definovať kritéria, ktoré musia byť splnené, aby sme danú user story mohli považovať za splnenú.}
+
+    \section*{User story}
+
+    \textnormal{User story môže byť označený ako “done” iba v prípade, že spĺňa nasledujúce kritéria:}
+
+    \begin{itemize}
+        \item Všetky tasky sú vykonané.
+        \item User story je otestovaný a všetky testy zbehli úspešne.
+        \item Dosiahnutá funkcionalita spĺňa definované akceptačné kritéria.
+        \item Prebehlo code review.
+        \item Všetky zmeny a konfigurácie sú dokumentované.
+    \end{itemize}
+
+    \section*{Šprint}
+
+    \textnormal{Šprint môže byť označený ako “done” iba v prípade, že spĺňa nasledujúce kritéria:}
+
+    \begin{itemize}
+        \item Všetky úlohy v danom šprinte sú hotové.
+        \item Product backlog bol aktualizovaný.
+        \item Prebehli sprint review a retrospektíva šprintu.
+        \item Šprint je zdokumentovaný.
+        \item Šprint bol akceptovaný vlastníkom produktu.
+    \end{itemize}
+
+
+    \section*{Nasadenie do produkcie}
+
+    \textnormal{Nasadenie do produkcie môže byť vykonané iba v prípade, že spĺňa nasledujúce kritéria:}
+
+    \begin{itemize}
+        \item Všetky user story sú hotové na základe definition of done.
+        \item Prostredie je pripravené na nasadenie.
+        \item Produkt je označený ako pripravený na nasadenie od členov tím a zákazníka.
+    \end{itemize}
+
+\end{document}
