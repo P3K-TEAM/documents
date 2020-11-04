@@ -7,6 +7,9 @@ compiling single / multiple LaTeX files.
 
 -   [Node.js](https://nodejs.org)
 -   LaTeX compiler
+-   LaTeX packages
+    -   For compiling file `examples/algorithms.tex` - [algorithmicx](https://www.ctan.org/pkg/algorithmicx) 
+    -   For compiling file `examples/hyperlinks.tex` - [hyperref](https://ctan.org/pkg/hyperref) 
 
 ## Usage
 
