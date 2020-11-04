@@ -1,0 +1,55 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+
+\title{Tables, Floats and Tabular environment}
+\author{Author}
+\date{}
+
+\begin{document}
+    \maketitle
+
+    \section{Introduction}
+    Let's learn to make tables.
+    
+    \subsection{The tabular environment}
+
+    This is the tabular environment for the table shown in Table~\ref{tab:ferko}.
+    \bigskip % move the tabular environment down a little
+
+    \begin{tabular}{|l|l|}
+        \hline
+        Name & Your Name Here \\
+        \hline
+        Subject & Writing with \LaTeX \\
+        \hline
+        Grade & A+ \\
+        \hline
+    \end{tabular}
+
+    \subsection{Floats: Table}
+
+    \begin{table}[htpb]
+        \caption{My Gradebook}
+        \begin{center}
+            \begin{tabular}{|l|l|}
+                \hline
+                Name & Your Name Here \\
+                \hline
+                Subject & Writing with \LaTeX \\
+                \hline
+                Grade & A+ \\
+                \hline
+            \end{tabular}
+        \end{center}
+        \label{tab:grades}
+    \end{table}
+
+    \subsection{References}
+
+    You can see my grades in Table~\ref{tab:grades}.
+    
+    \section{Conclusion}
+
+\end{document}
+
