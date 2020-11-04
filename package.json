@@ -1,0 +1,25 @@
+{
+  "name": "latexjs",
+  "version": "1.0.0",
+  "description": "Node.js wrapper for LaTeX",
+  "main": "scripts/compile.js",
+  "scripts": {
+    "compile": "node scripts/compile.js",
+    "compile:all": "node scripts/compile.js --all --clean",
+    "clean": "node scripts/compile.js --clean"
+  },
+  "author": "MCFreddie777<mcfreddie777@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MCFreddie777/latexjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MCFreddie777/latexjs/issues"
+  },
+  "homepage": "https://github.com/MCFreddie777/latexjs#readme",
+  "devDependencies": {
+    "node-latex": "^3.0.0",
+    "prettier": "^2.1.2"
+  }
+}
