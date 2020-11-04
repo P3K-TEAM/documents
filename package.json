@@ -4,8 +4,8 @@
   "description": "Node.js wrapper for LaTeX",
   "main": "scripts/compile.js",
   "scripts": {
-    "compile": "node scripts/compile.js",
-    "compile:all": "node scripts/compile.js --all --clean",
+    "compile": "node scripts/compile.js --inputs src/examples/assets/img,src/examples/templates",
+    "compile:all": "node scripts/compile.js --all --clean --inputs src/examples/assets/img,src/examples/templates",
     "clean": "node scripts/compile.js --clean"
   },
   "author": "MCFreddie777<mcfreddie777@gmail.com>",

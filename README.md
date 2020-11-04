@@ -5,8 +5,8 @@ compiling single / multiple LaTeX files.
 
 ## Prerequirements
 
-- [Node.js](https://nodejs.org)
-- LaTeX compiler 
+-   [Node.js](https://nodejs.org)
+-   LaTeX compiler
 
 ## Usage
 
@@ -39,9 +39,13 @@ npm install
 #### Command Line Options
 
 -   `--clean`
-    will clean the output directory (remove all files in `out`, so use it carefully)
-
+    -   If provided, the script will clean the output directory (remove all files in `out`, so use it carefully)
 -   `--file`
-    is used when specifying relative path to a single file
+    -   This option is used when specifying relative path to a single file
 -   `--all`
-    to compile all `.tex` files in `src` directory (or in any subdirectory).
+    -   If specified, script will compile all `.tex` files in `src` directory (or in any subdirectory).
+-   `--inputs`
+    -   Importing assets should contain URL relative to the working directory.
+        If you wish to specify more relative paths, use this option.
+    -   _Supported values_: multiple string URLs, separated by comma.
+    -   E.g. `--inputs src/examples/assets/img,src/examples/templates`

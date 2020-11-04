@@ -6,6 +6,8 @@ const transformArgs = require('./helper/transform-args');
 
 const srcPath = path.resolve(__dirname, '../src');
 const outPath = path.resolve(__dirname, '../out');
+const rootDirPath = path.resolve(__dirname, '../');
+let inputs = [];
 
 (async function () {
 	await main();
@@ -21,6 +23,15 @@ async function main() {
 	if ('clean' in args) {
 		fs.rmdirSync(outPath, { recursive: true });
 		console.log(`Cleaned output directory (${outPath}).\n`);
+	}
+
+	// Parse inputs
+	if ('inputs' in args) {
+		inputs = args['inputs']
+			.split(',')
+			.map((input) =>
+				path.resolve(__dirname, path.join(rootDirPath, input))
+			);
 	}
 
 	// Compile all files
@@ -53,7 +64,7 @@ async function compile(file) {
 		const output = fs.createWriteStream(path.resolve(outPath, pdfFile));
 
 		// Compile
-		const pdf = latex(input);
+		const pdf = latex(input, { inputs: [rootDirPath, ...inputs] });
 		pdf.pipe(output);
 
 		// Hooks
