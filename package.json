@@ -1,25 +1,26 @@
 {
-  "name": "latexjs",
-  "version": "1.0.0",
-  "description": "Node.js wrapper for LaTeX",
-  "main": "scripts/compile.js",
-  "scripts": {
-    "compile": "node scripts/compile.js --inputs src/examples/assets/img,src/examples/templates",
-    "compile:all": "node scripts/compile.js --all --clean --inputs src/examples/assets/img,src/examples/templates",
-    "clean": "node scripts/compile.js --clean"
-  },
-  "author": "MCFreddie777<mcfreddie777@gmail.com>",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MCFreddie777/latexjs.git"
-  },
-  "bugs": {
-    "url": "https://github.com/MCFreddie777/latexjs/issues"
-  },
-  "homepage": "https://github.com/MCFreddie777/latexjs#readme",
-  "devDependencies": {
-    "node-latex": "^3.0.0",
-    "prettier": "^2.1.2"
-  }
+	"name": "team10-documentation",
+	"version": "1.0.0",
+	"description": "",
+	"main": "scripts/compile.js",
+	"private": true,
+	"scripts": {
+		"compile": "node scripts/compile.js --inputs templates,src/examples/assets/img",
+		"compile:all": "node scripts/compile.js --all --clean --inputs templates,src/examples/assets/img",
+		"clean": "node scripts/compile.js --clean"
+	},
+	"author": "P3K Team",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/P3K-TEAM/documents.git"
+	},
+	"bugs": {
+		"url": "https://github.com/P3K-TEAM/documents/issues"
+	},
+	"homepage": "https://github.com/P3K-TEAM/documents#readme",
+	"devDependencies": {
+		"node-latex": "^3.0.0",
+		"prettier": "^2.1.2"
+	}
 }
