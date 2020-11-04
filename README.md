@@ -1,7 +1,4 @@
-# LaTeXJS
-
-LaTeX Boilerplate with script written in Node.js for cross-platform
-compiling single / multiple LaTeX files.
+# P3K Team - Documents
 
 ## Prerequirements
 
