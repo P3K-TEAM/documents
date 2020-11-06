@@ -24,20 +24,18 @@
         Pre verziovanie používame verziovací nástroj \emph{Git} a kód nahrávame na \emph{GitHub}.
         }
 
-        \subsection*{Repozitáre}
+    \section*{Repozitáre}
 
-            \textnormal{%
-            Všetky repozitáre sú umiestnené v jednej organizácií. Vytvorenie nového repozitára je na spoločnej dohode medzi vývojármi.
-            Organizácia je dostupná na nasledujúcom linku: \href{https://github.com/P3K-TEAM/}{https://github.com/P3K-TEAM/}
-            }
+        \textnormal{%
+        Všetky repozitáre sú umiestnené v jednej organizácií. Vytvorenie nového repozitára je na spoločnej dohode medzi vývojármi.
+        Organizácia je dostupná na nasledujúcom linku: \href{https://github.com/P3K-TEAM/}{https://github.com/P3K-TEAM/}
+        }
 
     \section*{Vytváranie vetiev}
 
-        \textnormal{%
-        Každá vetva (branch) musí byť správne pomenovaná v tvare \emph{\{Skratka JIRA projektu\}-\{Číslo úlohy\}-\{názov tasku v lowercase, rozdelený pomlčkami\}}
-        \bigskip
+        \textnormal{Každá vetva (branch) musí byť správne pomenovaná v tvare \emph{\{Skratka JIRA projektu\}-\{Číslo úlohy\}-\{názov tasku v lowercase, rozdelený pomlčkami\}}} \\
+        \smallskip
         \textbf{Napríklad:} \emph{FRON-17-define-git-methodology}
-        }
 
     \section*{Vytváranie commitov a písanie commit messages}
 
@@ -56,18 +54,21 @@
         \vspace*{.5cm}
         \subsection*{Ako napísať dobrý commit message?}
 
-            \textnormal{%
-            Commit message, teda správa commitu, je správa, ktorá vysvetľuje ostatným vývojárom, čo daný commit robí v prípade, že naň nastavia hlavičku verziovacieho systému. \\
-            Vo všeobecnosti by mala byť správa krátka (do 50 znakov) a výstižná. \\\\
-            Znenie správy musí byť v anglickom jazyku. Ustáleným konsenzom medzi vývojármi je písanie commit message v infinitíve slovesa.\\
-            }
+            \textnormal{Commit message, teda správa commitu, je správa, ktorá vysvetľuje ostatným vývojárom, čo daný commit robí v prípade, že naň nastavia hlavičku verziovacieho systému.}
 
-            \noindent \textnormal{%
-            Memotechnickou pomôckou pre písanie správy je prilepenie na začiatok slovného spojenia \emph{This commit will ...}. \\
-            \textbf{Príklad:} This commit will ... Setup TailwindCSS framework into the project \\
-            \textbf{Príklad 2:} This commit will ... Implement unit tests
-            \textbf{Príklad 3:} This commit will ... Refactor XYZ component \\
-            }
+            \begin{itemize}
+                \item Vo všeobecnosti by mala byť správa krátka (do 50 znakov) a výstižná.
+                \item Znenie správy musí byť v anglickom jazyku. Ustáleným konsenzom medzi vývojármi je písanie commit message v infinitíve slovesa.
+                \item Memotechnickou pomôckou je pridanie na začiatok slovného spojenia \emph{This commit will ...}.\\\\
+                \textbf{Príklady:}
+                \begin{itemize}
+                    \item This commit will ... Setup TailwindCSS framework into the project
+                    \item This commit will ... Implement unit tests
+                    \item This commit will ... Refactor XYZ component
+                \end{itemize}
+            \end{itemize}
+
+
 
             \noindent \textnormal{%
             Viac o commit messagoch je dobré si prečítať na
@@ -80,9 +81,24 @@
     \pagebreak
     \section*{Kontribúcia a spájanie vetiev}
 
-        \textnormal{%
-        Každá zmena v kóde počas úlohy musí byť namapovaná na JIRA úlohu. V prípade, že je daná úloha hotová, je nahratá na GitHub server (\emph{git push}). Na GitHub serveri daný vývojár vytvorí \textbf{Pull Request} s danými zmenami. Následne kontaktuje iných vývojárov v tíme, a požiada ich (použitím oficiálneho komunikačného kanálu - Slacku), aby urobili revíziu kódu (Code review).\\
-        \textbf{Poznámka: Kontaktovanie iných developerov je výlučne zodpovednosť autora Pull Request-u! Nezabúdajme, že úloha je hotová, až v prípade, že sú zmeny zlúčené s \emph{master} vetvou.}
-        }
+        \textnormal{Každá zmena v kóde počas úlohy musí byť namapovaná na JIRA úlohu. V prípade, že je daná úloha hotová, je nahratá na GitHub server (\emph{git push}). Na GitHub serveri daný vývojár vytvorí \textbf{Pull Request} s danými zmenami. Následne kontaktuje iných vývojárov v tíme, a požiada ich (použitím oficiálneho komunikačného kanálu - Slacku), aby urobili revíziu kódu (Code review).} \\\\
+        \textnormal{\textbf{Poznámka: Kontaktovanie iných developerov je výlučne zodpovednosť autora Pull Request-u! Nezabúdajme, že úloha je hotová, až v prípade, že sú zmeny zlúčené s \emph{master} vetvou.}} \\
 
+    \begin{itemize}
+        \item Názov pull requestu je zhodný s JIRA úlohou (\emph{PW-13 Refactor UploadFile component})
+        \item V prípade, že chce vývojár rozdeliť revíziu kódu na časti alebo chce vytvoriť pull request predčasne (keď pull request ešte nie je vhodný na revíziu), označí merge request prefixom \emph{WIP:}
+        \item Vytvorením pull requestu sa stav úlohy v JIRA mení na \emph{Code review}
+        \item V prípade že je to nutné, pull request obsahuje aj dokumentáciu k danej zmene - buď na Confluence, alebo priamo v repozitári v priečinku \emph{docs}
+    \end{itemize}
+
+    \bigskip
+
+    \textbf{Merge request môže byť zlúčený do master vetvy:}
+    \begin{itemize}
+        \item ak bol schválený aspoň iným vývojárom
+        \item CI/CD Pipeline je v stave zelená (passed)
+        \item všetky názvy commitov obsahujú konvenciu
+        \item vytvorením pull requestu sa stav úlohy v JIRA mení na \emph{Code review}
+        \item ak je to nutné, pull request obsahuje aj dokumentáciu k danej zmene - buď na Confluence, alebo priamo v repozitári v priečinku \emph{docs}
+    \end{itemize}
 \end{document}
