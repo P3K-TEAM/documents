@@ -1,0 +1,104 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{biblatex}
+
+% Title
+\newcommand{\documenttitle}
+{Verziovanie zdrojového kódu}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Metodika}
+
+
+\begin{document}
+
+    \include{title-page}
+
+    \section*{Úvod}
+        \textnormal{%
+        Verziovanie zdrojového kódu je jedna z najdôležitejších vecí pre prácu vývojárov v tíme. \\
+        Pre verziovanie používame verziovací nástroj \emph{Git} a kód nahrávame na \emph{GitHub}.
+        }
+
+    \section*{Repozitáre}
+
+        \textnormal{%
+        Všetky repozitáre sú umiestnené v jednej organizácií. Vytvorenie nového repozitára je na spoločnej dohode medzi vývojármi.
+        Organizácia je dostupná na nasledujúcom linku: \href{https://github.com/P3K-TEAM/}{https://github.com/P3K-TEAM/}
+        }
+
+    \section*{Vytváranie vetiev}
+
+        \textnormal{Každá vetva (branch) musí byť správne pomenovaná v tvare \emph{\{Skratka JIRA projektu\}-\{Číslo úlohy\}-\{názov tasku v lowercase, rozdelený pomlčkami\}}} \\
+        \smallskip
+        \textbf{Napríklad:} \emph{FRON-17-define-git-methodology}
+
+    \section*{Vytváranie commitov a písanie commit messages}
+
+        \vspace*{.25cm}
+        \subsection*{Kedy je správne vytvoriť commit?}
+
+            \textnormal{%
+            Commit označuje stav codebase v repozitári, ktorý je stabilný a každý z commitov prináša ucelenú zmenu do kódu. \\
+            Vývojár by mal commitovať ucelenú zmenu ako celok. V prípade že by prišlo do stavu, že by v jednej commit message mal rozdeliť funkcie čiarkou (napr. \emph{Add foo, create bar, implement foobar}), je správne rozdeliť tento commit na dané celky a commit-núť samostatne. \\
+            }
+
+            \noindent \textnormal{%
+            Veľký počet commitov nemusí byť zlá vec, pokiaľ dávajú zmysel. Niekedy aj zmena jedného písmena pri HOTFIX-e je dôvodom na commit. V prípade že daná úloha je komplexného charakteru, rozdelenie úlohy na menšie časti v podobe commitov pomôže iným vývojárom ľahšie revidovať kód po jednotlivých commit-och.
+            }
+
+        \vspace*{.5cm}
+        \subsection*{Ako napísať dobrý commit message?}
+
+            \textnormal{Commit message, teda správa commitu, je správa, ktorá vysvetľuje ostatným vývojárom, čo daný commit robí v prípade, že naň nastavia hlavičku verziovacieho systému.}
+
+            \begin{itemize}
+                \item Vo všeobecnosti by mala byť správa krátka (do 50 znakov) a výstižná.
+                \item Znenie správy musí byť v anglickom jazyku. Ustáleným konsenzom medzi vývojármi je písanie commit message v infinitíve slovesa.
+                \item Memotechnickou pomôckou je pridanie na začiatok slovného spojenia \emph{This commit will ...}.\\\\
+                \textbf{Príklady:}
+                \begin{itemize}
+                    \item This commit will ... Setup TailwindCSS framework into the project
+                    \item This commit will ... Implement unit tests
+                    \item This commit will ... Refactor XYZ component
+                \end{itemize}
+            \end{itemize}
+
+
+
+            \noindent \textnormal{%
+            Viac o commit messagoch je dobré si prečítať na
+            \href{https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/}{FreeCodeCamp - Writing good commit messages - A practical guide} \\\\
+            \textbf{Poznámka:} Takisto ako pred vetvu, analogicky aj pred commit message sa vkladá identifikátor JIRA úlohy. Rozdiel voči názvu vety je, že commit message sa píše s veľkým písmenom a slová sú rozdelené medzerami. \\
+            \textbf{Príklad:} \emph{PW-13 Refactor UploadFile component}
+            }
+    
+
+    \pagebreak
+    \section*{Kontribúcia a spájanie vetiev}
+
+        \textnormal{Každá zmena v kóde počas úlohy musí byť namapovaná na JIRA úlohu. V prípade, že je daná úloha hotová, je nahratá na GitHub server (\emph{git push}). Na GitHub serveri daný vývojár vytvorí \textbf{Pull Request} s danými zmenami. Následne kontaktuje iných vývojárov v tíme, a požiada ich (použitím oficiálneho komunikačného kanálu - Slacku), aby urobili revíziu kódu (Code review).} \\\\
+        \textnormal{\textbf{Poznámka: Kontaktovanie iných developerov je výlučne zodpovednosť autora Pull Request-u! Nezabúdajme, že úloha je hotová, až v prípade, že sú zmeny zlúčené s \emph{master} vetvou.}} \\
+
+    \begin{itemize}
+        \item Názov pull requestu je zhodný s JIRA úlohou (\emph{PW-13 Refactor UploadFile component})
+        \item V prípade, že chce vývojár rozdeliť revíziu kódu na časti alebo chce vytvoriť pull request predčasne (keď pull request ešte nie je vhodný na revíziu), označí merge request prefixom \emph{WIP:}
+        \item Vytvorením pull requestu sa stav úlohy v JIRA mení na \emph{Code review}
+        \item V prípade že je to nutné, pull request obsahuje aj dokumentáciu k danej zmene - buď na Confluence, alebo priamo v repozitári v priečinku \emph{docs}
+    \end{itemize}
+
+    \bigskip
+
+    \textbf{Merge request môže byť zlúčený do master vetvy:}
+    \begin{itemize}
+        \item ak bol schválený aspoň iným vývojárom
+        \item CI/CD Pipeline je v stave zelená (passed)
+        \item všetky názvy commitov obsahujú konvenciu
+        \item vytvorením pull requestu sa stav úlohy v JIRA mení na \emph{Code review}
+        \item ak je to nutné, pull request obsahuje aj dokumentáciu k danej zmene - buď na Confluence, alebo priamo v repozitári v priečinku \emph{docs}
+    \end{itemize}
+\end{document}
