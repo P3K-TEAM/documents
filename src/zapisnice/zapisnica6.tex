@@ -1,0 +1,91 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Zápisnica č. 6}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Stretnutie s vedúcim}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{lllll}
+            \multicolumn{3}{l}{\textbf{Dátum stretnutia:}} & & 6.11.2020 \\
+            \multicolumn{3}{l}{\textbf{Čas stretnutia:}} & & 16:00 - 19:00 hod. \\
+            \multicolumn{3}{l}{\textbf{Prítomní:}} \\
+            & & vedúci: & & Ing. Juraj Petrík \\
+            & & členovia tímu: & & Bc. František Gič  \\
+            & & & & Bc. Oliver Kanát \\
+            & & & & Bc. Karin Maliniaková \\
+            & & & & Bc. Denisa Mensatorisová \\
+            & & & & Bc. Anton Rusňák \\
+            & & & & Bc. Vladimír Svitok \\
+            & & & & Bc. Kristián Toldy \\
+            \multicolumn{3}{l}{\textbf{Neprítomní:}} & & -\\
+            \multicolumn{3}{l}{\textbf{Zapisovateľ:}} & & Bc. Karin Maliniaková \\
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Program:}
+
+    \begin{enumerate}
+        \item Sprint review
+        \item Retrospektíva šprintu 
+        \item Odhadovanie položiek Produktového backlogu
+        \item Plánovanie šprintu
+    \end{enumerate}
+
+    \section*{Sprint Review}
+
+        \textnormal {Úlohy z backendu neboli všetky hotové. A jedna úloha nebola úplná. }
+
+    \section*{Plánovanie šprintu}
+
+    \begin{itemize}
+    \item \textbf {PW - Prezentačný web} 
+        \begin{itemize}
+            \item PW24 - Implement 404 page \textbf {@fero}
+            \item PW25 - Add documentation about adding documents to the web \textbf {@fero}
+            \item PW26 - Dokumentácia inžinierskeho diela \textbf {@karin}
+            \item PW27 - Dokumentácia riadenia \textbf {@karin}
+            \item PW28 - Create architecture diagram \textbf {@karin}
+        \end{itemize}
+    \item \textbf {FRON - Frontend} 
+        \begin{itemize}
+            \item FRON18 - Implement fetching results from the API \textbf {@tono}
+            \item FRON19 - Implement uploading files to the API \textbf {@dena}
+            \item FRON20 - Implement modals and alerts \textbf {@fero}
+            \item FRON21 - Setup unit tests in Mocha \textbf {@fero}
+        \end{itemize}  
+    \item \textbf {BE - Backend} 
+        \begin{itemize}
+            \item BE7 - Text preprocess \textbf {@vlado}
+            \item BE8 - Text comparison \textbf {@kiko}
+            \item BE30 - Implement endpoint for retrieving files \textbf {@vlado}
+            \item BE35 - Setup ElasticSearch (BE34 - Document corpus) \textbf {@oliver}
+            \item BE36 - Define document structure in ElasticSearch (BE34 - Document corpus) \textbf {@oliver}
+            \item BE38 - Implement crawler for Referaty.sk (BE34 - Document corpus) \textbf {@tono}
+            \item BE39 - Process wikipedia dumps (BE34 - Document corpus) \textbf {@karin}
+        \end{itemize}        
+    \end{itemize}
+
+    \section*{Poznámky zo stretnutia:}
+
+    \begin{itemize}
+        \item Vytvoriť Confluence - na písanie dokumentácií, analýz, metodík... 
+        \item Dohodli sme sa, že pri plánovaní šprintu budeme brať do úvahy, že osoba má na 2 týždne - 2MD. Čiže na dvojtýždňový šprint môžeme ako tím zobrať úlohy ohodnotené 14MD.
+        \item Prebehli sprint review a retrospektíva šprintu.
+        \item Šprint je zdokumentovaný.
+        \item Šprint bol akceptovaný vlastníkom produktu.
+    \end{itemize}
+
+\end{document}

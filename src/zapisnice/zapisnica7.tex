@@ -1,0 +1,62 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Zápisnica č. 7}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Stretnutie s vedúcim}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{lllll}
+            \multicolumn{3}{l}{\textbf{Dátum stretnutia:}} & & 13.11.2020 \\
+            \multicolumn{3}{l}{\textbf{Čas stretnutia:}} & & 16:00 - 19:00 hod. \\
+            \multicolumn{3}{l}{\textbf{Prítomní:}} \\
+            & & vedúci: & & Ing. Juraj Petrík \\
+            & & členovia tímu: & & Bc. František Gič  \\
+            & & & & Bc. Oliver Kanát \\
+            & & & & Bc. Karin Maliniaková \\
+            & & & & Bc. Denisa Mensatorisová \\
+            & & & & Bc. Anton Rusňák \\
+            & & & & Bc. Vladimír Svitok \\
+            & & & & Bc. Kristián Toldy \\
+            \multicolumn{3}{l}{\textbf{Neprítomní:}} & & -\\
+            \multicolumn{3}{l}{\textbf{Zapisovateľ:}} & & Bc. Karin Maliniaková \\
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Program:}
+    
+    \begin{enumerate}
+        \item Standup
+        \item Vyriešenie problémov, ktoré vznikli po týždni šprintu
+        \item Diskusia
+    \end{enumerate}
+
+    \section*{Poznámky zo stretnutia:}
+
+    \begin{itemize}
+        \item Prešli sme si stav úloh a môžeme zhodnotiť, že polovica úloh je hotová, takže šprint by sme mali stihnúť, ak sa nevyskytnú nejaké väčšie problémy.
+        \begin{itemize}
+            \item Setup Unit testov v Mocha je hotový
+            \item Implement modals and alert - skoro hotové
+            \item Dorobené úpravy v dizajne frontendu 
+            \item Dokumentácia riadenia - skoro hotová
+            \item Dokumentácia inžinierskeho diela - začatá
+            \item Implement 404 page - hotové
+            \item úlohy z backendu (Text comparison a Text prepocess) - z polovice hotové
+        \end{itemize}
+        \item Vyriešili sme vzniknuté problémy počas prvého týždňa šprintu. Jednalo sa o upresnenie úloh od product ownera. 
+    \end{itemize}
+
+\end{document}

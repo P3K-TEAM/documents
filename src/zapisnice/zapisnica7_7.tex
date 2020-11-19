@@ -1,0 +1,92 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Zápisnica č. 7}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Stretnutie v tíme}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{lllll}
+            \multicolumn{3}{l}{\textbf{Dátum stretnutia:}} & & 18.11.2020 \\
+            \multicolumn{3}{l}{\textbf{Čas stretnutia:}} & & 12:00 - 13:00 hod. \\
+            \multicolumn{3}{l}{\textbf{Prítomní:}} \\
+            & & & & Bc. František Gič  \\
+            & & & & Bc. Oliver Kanát \\
+            & & & & Bc. Karin Maliniaková \\
+            & & & & Bc. Denisa Mensatorisová \\
+            & & & & Bc. Anton Rusňák \\
+            & & & & Bc. Vladimír Svitok \\
+            & & & & Bc. Kristián Toldy \\
+            \multicolumn{3}{l}{\textbf{Neprítomní:}} & & -\\
+            \multicolumn{3}{l}{\textbf{Zapisovateľ:}} & & Bc. Karin Maliniaková \\
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Program:}
+
+    \begin{enumerate}
+        \item Standup
+    \end{enumerate}
+
+    \section*{Standup}
+
+    \begin{itemize}
+        \item \textbf {@fero}
+        \begin{itemize}
+            \item všetky úlohy hotové
+            \item ešte dopíše metodiky code review
+        \end{itemize}
+        \item \textbf {@tono}
+        \begin{itemize}
+            \item crawler hotový, už treba doriešiť len nastavenia
+            \item result page tiež hotová, už len doštýlovať 
+        \end{itemize}
+        \item \textbf {@dena}
+        \begin{itemize}
+            \item problém s unit testami
+        \end{itemize}
+        \item \textbf {@karin}
+        \begin{itemize}
+            \item dokumentácia riadenia hotová
+            \item pridané na web všetky zápisnice
+            \item spracovanie dát z wikipédie ešte nie je hotové 
+            \item do dokumentácie inžinierkeho diela je potrebný dátový model - treba vytvoriť 
+        \end{itemize}
+        \item \textbf {@vlado}
+        \begin{itemize}
+            \item text preprocessing - hotové
+            \item problém - čo robiť pri error 500
+        \end{itemize}
+        \item \textbf {@oliver}
+        \begin{itemize}
+            \item ElasticSearch už beží
+            \item treba kúpiť novú doménu na produkt (v procese riešenia s product ownerom)
+            \item poblém - ako budeme riešiť ukladanie hesiel do databázy
+        \end{itemize}
+        \item \textbf {@kiko}
+        \begin{itemize}
+            \item zisťovanie podobnosti je už takmer hotové, dnes večer bude na code review
+        \end{itemize}
+    \end{itemize}    
+
+    \section*{Poznámky zo stretnutia:}
+
+    \begin{itemize}
+        \item Unit testy nefunfujú, lebo sa v nových nastaveniach vyskytla chyba a pravdepodobne sa budeme musieť vrátiť k pôvodným nastaveniam. Do konca šprintu sa to už pravdepodobne nestíha. 
+        \item Dátový model vytvorí - @vlado
+        \item Prebrali sme problém s "error 500" a navrhli sme riešenia ako by sme mohli ukladať heslá - je to ešte potrebné dozistiť
+    \end{itemize}
+
+\end{document}
