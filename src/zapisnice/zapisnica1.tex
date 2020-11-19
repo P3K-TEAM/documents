@@ -1,0 +1,87 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Zápisnica č. 1}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Stretnutie s vedúcim}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{lllll}
+            \multicolumn{3}{l}{\textbf{Dátum stretnutia:}} & & 2.10.2020 \\
+            \multicolumn{3}{l}{\textbf{Čas stretnutia:}} & & 16:00 - 19:00 hod. \\
+            \multicolumn{3}{l}{\textbf{Prítomní:}} \\
+            & & vedúci: & & Ing. Juraj Petrík \\
+            & & členovia tímu: & & Bc. František Gič  \\
+            & & & & Bc. Oliver Kanát \\
+            & & & & Bc. Karin Maliniaková \\
+            & & & & Bc. Denisa Mensatorisová \\
+            & & & & Bc. Anton Rusňák \\
+            & & & & Bc. Vladimír Svitok \\
+            & & & & Bc. Kristián Toldy \\
+            \multicolumn{3}{l}{\textbf{Neprítomní:}} & & -\\
+            \multicolumn{3}{l}{\textbf{Zapisovateľ:}} & & Bc. František Gič \\
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Program:}
+
+    \begin{enumerate}
+        \item Prediskutovať "Ako budeme pracovať v tíme".
+        \item Dohodnutie sa na komunikačnom nástroji a na nástroji na riadenie.
+        \item Porozprávanie sa o samostatnom produkte, čo budeme vytvárať.
+    \end{enumerate}
+
+    \section*{Poznámky zo stretnutia:}
+
+    \begin{itemize}
+        \item GitHub repo
+        \begin{itemize}
+            \item private classroom/project
+            \item rozdelenie pre backend, frontend, prezentačný web
+        \end{itemize}
+        \item Zadefinovali sme si role v tíme:
+        \begin{itemize}
+            \item Product owner: Juro Petrík
+            \item Scrum Master: Karin Maliniaková
+            \item Dev team: všetci členovia, bez bližšieho špecifikovania, konkrétne rozdelenie možno zadefinujeme neskôr (po niekoľkých šprintoch)
+        \end{itemize}
+        \item Nástroje na komunikáciu a manažment úloh:
+        \begin{itemize}
+            \item Komunikácia: Slack (využívať channels, threads)
+            \item Manažment úloh: Atlassian JIRA
+        \end{itemize}
+        \item S product ownerom/vedúcim práce sme sa rozprávali o cieľoch na ZS a o požiadavkách na produkt. Zadefinovali sme si kto by teoreticky mohli byť v budúcnosti 
+        používatelia produktu. Počas stretnutia sme si pozreli pár stránok konkurencie a porozprávali sa o tom, čo by bolo dobré zahrnúť do nášho produktu a čo naopak nie? 
+        Navrhli sme základné zdroje dát, z ktorých budeme môcť čerpať dáta. 
+    \end{itemize}
+
+
+    \section*{Úlohy na prvý týždeň:}
+
+    \textnormal{Na stretnutí sme sa s vedúcim dohodli, že prvý týždeň si vyskúšame cvičný šprint č. 0. 
+    Dohodli sme sa, že šprint si naplánujeme samy ako tím bez vedúceho/product ownera. Product owner určil ako prioritu do budúceho týždňa, tieto úlohy:}
+
+    \begin{itemize}
+        \item Založiť GitHub repozitár
+        \item Urobiť prípravu tímového rezentačného webu
+        \begin{itemize}
+            \item členovia tímu a ich role
+            \item dokumenty (zápisnice, šablóna zápisnice)
+            \item kontakt na tím
+            \item dizajn webu
+        \end{itemize}
+    \end{itemize}
+
+\end{document}

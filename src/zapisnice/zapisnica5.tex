@@ -1,0 +1,62 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Zápisnica č. 5}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Stretnutie s vedúcim}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{lllll}
+            \multicolumn{3}{l}{\textbf{Dátum stretnutia:}} & & 30.10.2020 \\
+            \multicolumn{3}{l}{\textbf{Čas stretnutia:}} & & 16:00 - 19:00 hod. \\
+            \multicolumn{3}{l}{\textbf{Prítomní:}} \\
+            & & vedúci: & & Ing. Juraj Petrík \\
+            & & členovia tímu: & & Bc. František Gič  \\
+            & & & & Bc. Oliver Kanát \\
+            & & & & Bc. Karin Maliniaková \\
+            & & & & Bc. Denisa Mensatorisová \\
+            & & & & Bc. Anton Rusňák \\
+            & & & & Bc. Vladimír Svitok \\
+            & & & & Bc. Kristián Toldy \\
+            \multicolumn{3}{l}{\textbf{Neprítomní:}} & & -\\
+            \multicolumn{3}{l}{\textbf{Zapisovateľ:}} & & Bc. Karin Maliniaková \\
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Program:}
+
+    \begin{enumerate}
+        \item Standup
+        \item Prediskutovanie dizajnu s product ownerom
+        \item Diskusia
+    \end{enumerate}
+
+    \section*{Poznámky zo stretnutia:}
+
+    \begin{itemize}
+        \item Prešli sme si stav úloh
+        \begin{itemize}
+            \item Vytvorený a vybratý dizajn pre frontend
+            \item Implementačné úlohy z frontendu sa ešte nezačali robiť
+            \item Unit a Cypress testy sú skoro hotové
+            \item Responzivita prezentačného webu - ešte nezačaté
+            \item Setup Django project - už treba len code review
+            \item inštalácia servera je skoro hotová
+        \end{itemize}
+        \item Návrh dizajnu spĺňa predstavy product ownera
+        \item V diskusii na záver stretnutia sme upresňovali ciele na ZS a LS, čo všetko by mal hotový produkt poskytovať a spĺňať.
+    \end{itemize}
+
+\end{document}

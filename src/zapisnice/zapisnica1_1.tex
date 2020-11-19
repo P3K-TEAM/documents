@@ -1,0 +1,68 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Zápisnica č. 1}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Stretnutie v tíme}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{lllll}
+            \multicolumn{3}{l}{\textbf{Dátum stretnutia:}} & & 7.10.2020 \\
+            \multicolumn{3}{l}{\textbf{Čas stretnutia:}} & & 12:00 - 14:00 hod. \\
+            \multicolumn{3}{l}{\textbf{Prítomní:}} \\
+            & & & & Bc. František Gič  \\
+            & & & & Bc. Karin Maliniaková \\
+            & & & & Bc. Denisa Mensatorisová \\
+            & & & & Bc. Anton Rusňák \\
+            & & & & Bc. Vladimír Svitok \\
+            & & & & Bc. Kristián Toldy \\
+            \multicolumn{3}{l}{\textbf{Neprítomní:}} & &  Bc. Oliver Kanát - návšteva lekára \\\\
+            \multicolumn{3}{l}{\textbf{Zapisovateľ:}} & & Bc. František Gič \\
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Agenda:}
+
+    \begin{enumerate}
+        \item Piatok končí šprint - treba naplánovať šprint
+        \item Do konca októbra treba mať spravený web tímu
+        \begin{itemize}
+            \item založiť git
+            \item šablóna zápisnice
+            \item nadizajnovať (alias rozhodnúť sa)
+            \begin{itemize}
+                \item CSS Framework vs. Reaktívny framework
+            \end{itemize}
+        \end{itemize}
+        \item Treba začať aj s prácou na produkte (implementácia alebo analýza) 
+    \end{enumerate}
+
+    \section*{Plánovanie šprintu}
+
+    \begin{itemize}
+    \item \textbf {PW - Prezentačný web} 
+        \begin{itemize}
+            \item PW4 - Vytvoriť GitHub repozitár \textbf {@fero}
+            \item PW5 - Zohnať informácie o členoch tímu \textbf {@dena}
+            \item PW6 - Vytvoriť šablónu zápisnice \textbf {@karin}
+            \item PW8 - Dizajn: Zvoliť tému alebo vlastné riešenie \textbf {@tono}   
+        \end{itemize}
+    \item \textbf {BE - Backend} 
+        \begin{itemize}
+            \item BE1 - BE1 - Analýza zdrojov údajov \textbf {@kiko (@vlado, @oliver)}
+        \end{itemize}        
+    \end{itemize}
+
+\end{document}

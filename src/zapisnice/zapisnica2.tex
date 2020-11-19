@@ -1,0 +1,119 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Zápisnica č. 2}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Stretnutie s vedúcim}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{lllll}
+            \multicolumn{3}{l}{\textbf{Dátum stretnutia:}} & & 9.10.2020 \\
+            \multicolumn{3}{l}{\textbf{Čas stretnutia:}} & & 16:00 - 19:00 hod. \\
+            \multicolumn{3}{l}{\textbf{Prítomní:}} \\
+            & & vedúci: & & Ing. Juraj Petrík \\
+            & & členovia tímu: & & Bc. František Gič  \\
+            & & & & Bc. Oliver Kanát \\
+            & & & & Bc. Karin Maliniaková \\
+            & & & & Bc. Denisa Mensatorisová \\
+            & & & & Bc. Anton Rusňák \\
+            & & & & Bc. Vladimír Svitok \\
+            & & & & Bc. Kristián Toldy \\
+            \multicolumn{3}{l}{\textbf{Neprítomní:}} & & -\\
+            \multicolumn{3}{l}{\textbf{Zapisovateľ:}} & & Bc. Karin Maliniaková \\
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Program:}
+
+    \begin{enumerate}
+        \item Sprint review
+        \item Retrospektíva šprintu
+        \item Odhadovanie položiek Produktového backlogu
+        \item Plánovanie šprintu
+    \end{enumerate}
+
+    \section*{Sprint Review}
+
+    \begin{itemize}
+        \item \underline {PW6 - Vytvoriť šablónu zápisnice} - šablóna je vytvorená vo Worde a dohodli sme sa, že šablónu na web nebudeme zverejňovať
+        \item \underline {PW8 - Dizajn: Zvoliť tému alebo vlastné riešenie} - spísať celú analýzu (medzi čím sme sa dohadovali a k čomu sme došli, nech je z toho nejaký výstup), následne zverejniť na Conflence
+        \item \underline {PW5 - Zohnať informácie o členoch tímu} - Informácie/fotky pripravené na použitie pri vytváraní prezentačného webu - uložené na Google disku
+        \item \underline {PW4 - Vytvoriť GitHub repozitár} - vytvorený
+        \item \underline {BE1 - Analýza zdrojov údajov} - úloha sa v priebehu šprintu rozdelila na 3 samostatné tasky
+        \begin{itemize}
+            \item BE15 - Pozbierať outcomes z prvého meetingu s vedúcim
+            \item BE16 - Dohodnúť a napísať zdroje údajov, ktoré budeme čerpať
+            \item BE17 - Spraviť research ohľadom extrahovania textu z jednotlivých zdrojov (oskole, referaty - či majú API)
+            \item nedostatočne splnené všetky tri tasky - treba ku všetkému aj nejaký dokument, kde to bude všetko jasne popísané a preskúmať viac do hĺbky
+        \end{itemize}
+    \end{itemize}
+
+    \section*{Retrospektíva šprintu}
+
+    \begin{itemize}
+    \item \textbf {Čo sa nám páčilo/podarilo:} 
+        \begin{itemize}
+            \item väčšina taskov bola doručená aj napriek neskorému naplánovaniu šprintu
+        \end{itemize}
+    \item \textbf {Čo sa nám nepáčilo/nepodarilo:}
+        \begin{itemize}
+            \item neskoré plánovanie šprintu
+            \item nedostatočný opis taskov
+        \end{itemize}
+    \item \textbf {Čo by sme mali zaviesť:} 
+        \begin{itemize}
+            \item plánovanie šprintu skôr - na stretnutí s vedúcim, kedy ukončujeme šprint
+            \item podrobnejší opis taskov
+        \end{itemize}
+    \end{itemize}
+
+
+    \section*{Plánovanie šprintu}
+
+    \begin{itemize}
+    \item \textbf {PW - Prezentačný web} 
+        \begin{itemize}
+            \item PW9 - Vytvoriť základ podstránky, založiť projekt \textbf {@fero}
+            \item PW10 - Vytvoriť časť o členoch tímu \textbf {@tono}
+            \item PW11 - Vytvoriť časť o dokumentoch \textbf {@karin}
+            \item PW12 - Vytvoriť kontaktnú časť \textbf {@dena}
+            \item PW13 - Vytvoriť časť "O projekte" \textbf {@kiko}
+            \item PW14 - Vytvoriť navigáciu \textbf {@fero}
+            \item PW15 - Aktualizácia dát \textbf {@karin}
+            \item PW16 - Vytvoriť dizajn tímového webu v Adobe XD \textbf {@dena}   
+        \end{itemize}
+    \item \textbf {BE - Backend} 
+        \begin{itemize}
+            \item BE18 - Prirodzený text (BE1 - Analýza zdrojov údajov) \textbf {@kiko}
+            \item BE19 - Zdrojový kód (BE1 - Analýza zdrojov údajov) \textbf {@dena}
+            \item BE20 - Pre SK (BE2 - Analýza predspracovania textu) \textbf {@fero}
+            \item BE21 - Pre ENG (BE2 - Analýza prespracovania textu) \textbf {@vlado}
+            \item BE23 - vektorové metódy (BE5 - Analýza porovnávania podobnosti textu) \textbf {@oliver}
+            \item BE24 - štatistické metódy/citačné metódy (Be5 - Analýza porovnávania podobnosti textu \textbf {@tono}
+            \item BE25 - Antiplag nástroje \textbf {@karin}
+        \end{itemize}        
+    \end{itemize}
+
+    \section*{Poznámky zo stretnutia:}
+
+    \begin{itemize}
+        \item Vytvoriť Confluence - na písanie dokumentácií, analýz, metodík... 
+        \item Dohodli sme sa, že pri plánovaní šprintu budeme brať do úvahy, že osoba má na 2 týždne - 2MD. Čiže na dvojtýždňový šprint môžeme ako tím zobrať úlohy ohodnotené 14MD.
+        \item Prebehli sprint review a retrospektíva šprintu.
+        \item Šprint je zdokumentovaný.
+        \item Šprint bol akceptovaný vlastníkom produktu.
+    \end{itemize}
+
+\end{document}

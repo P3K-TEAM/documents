@@ -1,0 +1,94 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Zápisnica č. 6}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Stretnutie v tíme}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{lllll}
+            \multicolumn{3}{l}{\textbf{Dátum stretnutia:}} & & 11.11.2020 \\
+            \multicolumn{3}{l}{\textbf{Čas stretnutia:}} & & 12:00 - 14:30 hod. \\
+            \multicolumn{3}{l}{\textbf{Prítomní:}} \\
+            & & & & Bc. František Gič  \\
+            & & & & Bc. Oliver Kanát \\
+            & & & & Bc. Karin Maliniaková \\
+            & & & & Bc. Denisa Mensatorisová \\
+            & & & & Bc. Anton Rusňák \\
+            & & & & Bc. Vladimír Svitok \\
+            & & & & Bc. Kristián Toldy \\
+            & & prizvaný na druhú časť stretnutia: & & Ing. Juraj Petrík \\
+            \multicolumn{3}{l}{\textbf{Neprítomní:}} & & -\\
+            \multicolumn{3}{l}{\textbf{Zapisovateľ:}} & & Bc. Karin Maliniaková \\
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Program:}
+
+    \begin{enumerate}
+        \item Standup
+        \item Prekonzultovanie dizajnu a funkcionality s product ownerom
+    \end{enumerate}
+
+    \section*{Standup}
+
+    \begin{itemize}
+        \item \textbf {@fero}
+        \begin{itemize}
+            \item všetky úlohy týkajúce sa prezentačného webu - hotové
+            \item nastavené Unit test pre frontend
+            \item pracuje na úlohe FRON20 - Implement modals and alert
+        \end{itemize}
+        \item \textbf {@tono}
+        \begin{itemize}
+            \item pracuje na frontende - result page
+            \item problém s dizajnom result page - nie je dostatočne špecifikovaná funcionalita a predstava od product ownera
+        \end{itemize}
+        \item \textbf {@dena}
+        \begin{itemize}
+            \item pracuje na frontende - upload files
+            \item dizajn je prerobený ale je potrebné schválenie product ownera
+            \item obavy, že sa daná úloha nestihne celá spraviť v rámci šprintu
+        \end{itemize}
+        \item \textbf {@karin}
+        \begin{itemize}
+            \item pracuje na dokumentáci riadenia a inžinierskeho diela
+            \item problém - upresnenie rolí v tíme
+            \item problém - navrhnutie architektúry
+        \end{itemize}
+        \item \textbf {@vlado}
+        \begin{itemize}
+            \item pracuje na svojich úlohách, zatiaľ neeviduje žiadny problém
+        \end{itemize}
+        \item \textbf {@oliver}
+        \begin{itemize}
+            \item pracuje na svojich úlohách, zatiaľ neeviduje žiadny problém
+        \end{itemize}
+        \item \textbf {@kiko}
+        \begin{itemize}
+            \item problém - presne zadefinovať čo vracia API (štruktúru dát) - prediskutovanie aj s product ownerom
+        \end{itemize}
+    \end{itemize}    
+
+    \section*{Poznámky zo stretnutia:}
+
+    \begin{itemize}
+        \item Na druhú polovicu stretnutia bol prizvaný product owner/vedúci tímu, vzhľadom na to, že sa vyskytli problémy pri riešení niektorých úloh. S product ownerom sme vyriešili vzniknuté problémy. 
+        \item Prebrali sme si ako by mala vyzerať architektúra systému. 
+        \item Upresnili sme si role v tíme - "zodpovedné osoby" za jednotlivé časti práce na projekte.
+        \item Scrum master navrhol teambuilding na odreagovanie od úloh v šprinte a na zlepšenie komunikácie medzi jednotlivými členmi tímu. Dohodli sme sa, že v piatok po stretnutí s vedúcim si zahráme hru Among Us.
+    \end{itemize}
+
+\end{document}

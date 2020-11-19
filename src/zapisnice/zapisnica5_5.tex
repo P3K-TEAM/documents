@@ -1,0 +1,61 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Zápisnica č. 5}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Stretnutie v tíme}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{lllll}
+            \multicolumn{3}{l}{\textbf{Dátum stretnutia:}} & & 4.11.2020 \\
+            \multicolumn{3}{l}{\textbf{Čas stretnutia:}} & & 12:00 - 13:45 hod. \\
+            \multicolumn{3}{l}{\textbf{Prítomní:}} \\
+            & & & & Bc. František Gič  \\
+            & & & & Bc. Oliver Kanát \\
+            & & & & Bc. Karin Maliniaková \\
+            & & & & Bc. Denisa Mensatorisová \\
+            & & & & Bc. Anton Rusňák \\
+            & & & & Bc. Vladimír Svitok \\
+            & & & & Bc. Kristián Toldy \\
+            \multicolumn{3}{l}{\textbf{Neprítomní:}} & & -\\
+            \multicolumn{3}{l}{\textbf{Zapisovateľ:}} & & Bc. Karin Maliniaková \\
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Agenda:}
+
+    \begin{enumerate}
+        \item Standup
+    \end{enumerate}
+
+    \section*{Standup}
+
+    \begin{itemize}
+        \item Vyzerá to dosť zle s dokončením niektorých úloh. Je dosť možné, že sa niečo aj nestihne. Aktuálny stav je: 
+        \begin{itemize}
+            \item Implementačné úlohy z frontendu sú z polovice hotové, ešte treba doladiť detaily a doštýlovať. 
+            \item Unit a cypress testy sú hotové
+            \item Prezentačný web je nasadený
+            \item Server je nainštalovaný
+            \item Responzivita webu ešte nie je ani začatá a úlohy z jedna úloha z backendu tiež ešte nie je ani začatá
+        \end{itemize}
+    \end{itemize}
+
+    \section*{Poznámky zo stretnutia:}
+
+    \textnormal {Snažiť sa dokončiť všetky úlohy aby sme nefaili šprint a zobrať si ponaučenie, aby sa to v budúcom šprinte nezopakovalo, že dva dni pred koncom šprintu sme niektoré úlohy ani nezačali riešiť. Hlavne také úlohy, od ktorých závisia iné úlohy, iných členov tímu.}
+
+
+\end{document}
