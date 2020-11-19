@@ -1,0 +1,95 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Code review}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Metodika}
+
+\begin{document}
+
+    \include{title-page}
+
+    \section*{Pull Request}
+
+    Pull Request (GitHub), alebo Merge Request (GitLab), ďalej už len PR / MR, je žiadosť o vzájomnú kontrolu
+    kódu osobami inými ako je autor danej časti zdrojového kódu.
+
+    \subsection*{Kedy vytvoriť PR?}
+
+    Pull request je možné vytvoriť v akomkoľvek stave vypracovania úlohy. V prípade že úloha nie je dokončená, sa na začiatok
+    názvu PR prilepí skratka \textbf{WIP:} a pokračuje názvom PR.
+    Skratka WIP (Work in progress) ostatným developerom značí, že daná časť kódu ešte nie je vhodná na code review.
+
+    \subsection*{Názov pull requestu}
+
+    Názov pull requestu by mal začínať skratkou projektu v JIRE a referenčným číslom. Po tomto nasleduje názov JIRA úlohy.\\\\
+    \textbf{Príklad:} \emph{PW-13 Refactor UploadFile component}
+
+    \subsection*{Obsah PR}
+
+    PR Obsahuje iba tie zmeny, ktoré sú relevantné s JIRA úlohou, ktorej sa daný PR týka.\\
+
+    \noindent Pull request obsahuje primárne zdrojové kódy. V prípade, že autor potrebuje na vzdialený server nahrať aj väčšie
+    súbory (rozumej 1MB a viac), použije technológiu \href{https://git-lfs.github.com/}{Git LFS (Large File Storage)}.\\
+
+    \noindent Ak je to nutné, pull request obsahuje aj dokumentáciu k danej zmene vo formáte \href{https://www.markdownguide.org/}{MarkDown}.\\
+
+    \noindent V prípade, že je to špecifikované v rámci JIRA úlohy, merge request obsahuje zmeny otestované spolu testami (Unit, E2E).
+
+
+    \section*{Prehliadka kódu (code review)}
+
+    Vytvorením pull requestu sa stav úlohy v JIRA mení na \emph{Code review}.
+    V tomto momente autor zmien kontaktovuje iných developerov (použitím oficiálneho
+    komunikačného kanálu - Slacku) a požiadať ich o prehliadku kódu.\\
+
+    \noindent \textbf{Poznámka: Kontaktovanie iných developerov je výlučne zodpovednosť autora Pull Request-u!
+    Nezabúdajme, že úloha je hotová, až v prípade, že sú zmeny zlúčené s \emph{master} vetvou.} \\
+
+    \subsection*{Kontrola kódu zahrňuje}
+
+    \noindent Pokiaľ bol iný developer požiadaný o code review, skontroluje kód:
+
+    \begin{itemize}
+        \item V prípade že nejde o jednoduchú zmenu, reviewer je povinný si danú vetvu lokálne odzrkadliť a zmeny pull
+        requestu manuálne skontrolovať.
+        \item V prípade že ide o zmenu vo vizuále webstránky ktorá bola predtým nadizajnovaná UX dizajnérom, reviewer je povinný
+        porovnať, či sa daná implementácia zhoduje s navrhnutým dizajnom.
+        \item Skontrolovanie, či úloha spĺňa všetky akceptačné kritériá JIRA úlohy.
+    \end{itemize}
+
+    \noindent Nezabúdajme, že za kvalitu kódu zodpovedá výhradne vývojár ktorý robil code review. Majme na mysli, že nekvalitný kód
+    prináša zvýšené kapacity na úpravu v budúcnosti, a pre to dbajme na kvalitný code review.
+
+    \pagebreak
+
+    \subsection*{Kvalita kódu}
+
+    \begin{itemize}
+        \item Kód je písaný čitateľne (názvy premenných, optimálna dĺžka riadku, logické a syntaktické chyby)
+        \item V prípade že ide o funkcionalitu, ktorá nie je jednoznačná, kód obsahuje komentáre pre takú časť kódu.
+        \item Kód je validný a správne naformátovaný.
+        \item V prípade že sú súčasťou kódu aj statické texty pre užívateľa, dodržujú správnu gramatiku daného jazyka.
+        \item Opakujúci sa kód je vyňatý do samostatnej metódy / funkcie.
+        \item Vývojár použil funkcionalitu ktorá existuje v niektorej z knižníc (Do not reinvent the wheel).
+        \item Z názvu funkcií a metód sa dá jednoznačne pochopiť čo daná funkcia robí a čo vracia.
+    \end{itemize}
+
+    \subsection*{Ukončenie code review}
+
+    \noindent V prípade, že vývojár našiel chybu v kóde, alebo potrebuje niečo prediskutovať s vývojárom, primárne používa komentáre
+    v UI GitHub-u. V taktomto prípade po ukončení review zvolí možnosť \textbf{Request changes}. \\
+
+    \noindent V prípade, že kód splňa požiadavky uvedené v tejto metodike, reviewer zvolí možnosť \textbf{Approve}. \\
+
+    \noindent Udelením súhlasu iného vývojára je autorovi pull requestu dovolené pomocou GitHubu zlúčiť daný pull request s master vetvou
+    použitím tlačidla \emph{Merge}, a následne nastaví status JIRA úlohy do statusu \emph{Done}.
+
+\end{document}
