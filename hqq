@@ -1,0 +1,86 @@
+[33mcommit 7afa84e812d1c3b192392260cd9a5565a2cb3215[m[33m ([m[1;36mHEAD -> [m[1;32mPW-29_update-documents[m[33m)[m
+Author: Karin Maliniaková <karin.m97@gmail.com>
+Date:   Thu Nov 19 17:43:04 2020 +0100
+
+    PW-29 add zapisnice
+
+[33mcommit 648a3d006b4f617dce01ab8cc718c133e69c8c2a[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: a44c7b4 a1ec341
+Author: František Gič <mcfreddie777@gmail.com>
+Date:   Fri Nov 6 11:09:55 2020 +0100
+
+    Merge pull request #1 from P3K-TEAM/FRON-17-define-git-methodology
+    
+    FRON-17 Define git methodology
+
+[33mcommit a1ec341220c22feb74390e6469ad2d91f17a116d[m[33m ([m[1;31morigin/FRON-17-define-git-methodology[m[33m)[m
+Author: František Gič <mcfreddie777@gmail.com>
+Date:   Fri Nov 6 11:02:33 2020 +0100
+
+    FRON-17 Define more detailed guidelines for creating pull request
+
+[33mcommit 279fdea23f6f888d190d2d2b9b7643156f22cb45[m
+Author: František Gič <mcfreddie777@gmail.com>
+Date:   Fri Nov 6 10:44:43 2020 +0100
+
+    FRON-17 Format title page meta information into table
+
+[33mcommit 1d0246eb9058c2a1bd01157a74e6d6339ded112b[m
+Author: František Gič <mcfreddie777@gmail.com>
+Date:   Thu Nov 5 02:19:30 2020 +0100
+
+    FRON-17 Define git methodology
+
+[33mcommit a44c7b46aeebf7019f00817111e2fb25a6f03902[m
+Author: František Gič <mcfreddie777@gmail.com>
+Date:   Thu Nov 5 00:42:06 2020 +0100
+
+    FRON-17 Rewrite Confluence docs into LaTeX
+
+[33mcommit 4bc56c6a956671fdc6553850b75ee846cf59cde0[m
+Author: František Gič <mcfreddie777@gmail.com>
+Date:   Thu Nov 5 00:25:12 2020 +0100
+
+    Update README.md
+
+[33mcommit 5119a90b4cdfa257372b24d4d579ca20190da27b[m
+Author: František Gič <mcfreddie777@gmail.com>
+Date:   Wed Nov 4 23:03:37 2020 +0100
+
+    FRON-17 Add title page template
+
+[33mcommit ad2577bbe194cdc4b7adf3163b27cb384b854021[m
+Author: František Gič <mcfreddie777@gmail.com>
+Date:   Thu Nov 5 00:20:59 2020 +0100
+
+    Add examples of algorithms and hyperlinks LaTex packages
+
+[33mcommit d29764123fcfe39136b54f876913340a1ec6d3e0[m
+Author: František Gič <mcfreddie777@gmail.com>
+Date:   Wed Nov 4 21:37:33 2020 +0100
+
+    Add examples
+
+[33mcommit 6fae05071f11990bd26d341b4d836d78be4f3a94[m
+Author: František Gič <mcfreddie777@gmail.com>
+Date:   Wed Nov 4 19:57:45 2020 +0100
+
+    Add support for importing assets from relative paths such as images
+
+[33mcommit a0b79f4ea6fc63377f36f18a20894049ec4b5315[m
+Author: František Gič <mcfreddie777@gmail.com>
+Date:   Wed Nov 4 17:31:22 2020 +0100
+
+    Add usage docs
+
+[33mcommit 27c7073a0e1c977760bd7bac338c9fda05a65a44[m
+Author: František Gič <mcfreddie777@gmail.com>
+Date:   Wed Nov 4 17:28:39 2020 +0100
+
+     Implement function for compiling LaTex files
+
+[33mcommit 32e5ec72c8a758386cae9a75d4ea245d0594b8fb[m
+Author: František Gič <mcfreddie777@gmail.com>
+Date:   Wed Nov 4 17:25:20 2020 +0100
+
+    Initial commit
