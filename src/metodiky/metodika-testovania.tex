@@ -1,0 +1,68 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Title
+\newcommand{\documenttitle}
+{Metodika testovania}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Metodika}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{ll}
+            \textbf{Autor:} & Bc. Kristián Toldy \\
+            \textbf{Dátum vytvorenia:} & 26.11.2020 \\
+            \\
+            \textbf{Autor poslednej zmeny:} & \\
+            \textbf{Dátum poslednje zmeny:} & \\
+            \hline
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Úvod}
+
+        \textnormal{%
+        Metodika testovania definuje typy testov, spôsob ich písania a spúšťania. Testovanie softvéru a jeho častí je dôležitou súčasťou vývoja softvéru. Akákoľvek, hoci aj malá zmena môže ovplyvniť funkcionalitu súvisiacich komponentov, preto je potrebné aby bola správnosť danej funkcionality vždy pred jej schválením otestovaná. \\\\
+Každá nová funkcionalita systému, ktorá bola implementovaná, musí prejsť testovaním. Testy sa vyvárajú jednotkové, ale aj integračné, pričom testy musia pokrývať aj určitú časť funkcionality.
+        }
+		\section*{Unit testy}
+
+        \textnormal{%
+     Unit testy umožňujú testovať individuálne jednotky kódu nezávisle od ostatných. Za jednotku považujeme samostatne testovateľnú časť programu, napr. funkciu, či jednotlivé komponenty. \\\\
+Unit testy by mali byť písané tak, aby overovali práve jednu funkcionalitu. Ak sa unit test skladá z viacerých častí, ktoré sa dajú dekomponovať, je ich potrebné rozdeliť do viacerých unit testov. \\\\
+Unit testy využívajú framework Mocha spolu s knižnicou Chai. V unit teste porovnávame vopred špecifikované hodnoty s výstupmi testovanej funkcie alebo metódy. \\\\
+Unit testy sú uložené v adresári \/tests\/unit, v ktorom je na každý komponent vytvorený samostatný test. Pomenovanie jednotlivých testov musí dodržiavať menovaciu konvenciu *.spec.js. 
+Testy je možné spustiť príkazom:
+npm run test:unit
+        }
+				
+				   \section*{E2E testy}
+
+        \textnormal{%
+        Metodika testovania definuje typy testov, spôsob ich písania a spúšťania. Testovanie softvéru a jeho častí je dôležitou súčasťou vývoja softvéru. Akákoľvek, hoci aj malá zmena môže ovplyvniť funkcionalitu súvisiacich komponentov, preto je potrebné aby bola správnosť danej funkcionality vždy pred jej schválením otestovaná. \\\\
+Každá nová funkcionalita systému, ktorá bola implementovaná, musí prejsť testovaním. Testy sa vytvárajú jednotkové, ale aj integračné, pričom testy musia pokrývať aj určitú časť funkcionality.
+        }
+				
+				   \section*{Postup testovania}
+
+        \textnormal{%
+\begin{enumerate}
+\item Napíš kód, ktorý sa bude testovať.
+\item Napíš testy pre danú časť kódu. 
+\item Spusti testy.
+\item Ak testy prebehli úspešne nasleduje commitnutie kódu na Github spolu s testami (kód je pripravený na Code Review)
+\item Ak testy neprebehli úspešne, je potrebné kód opraviť, prípadne overiť či sú testy napísané správne.
+\end{enumerate}
+        }
+        
+
+\end{document}
