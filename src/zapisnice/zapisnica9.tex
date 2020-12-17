@@ -1,0 +1,63 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Zápisnica č. 9}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Stretnutie s vedúcim}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{lllll}
+            \multicolumn{3}{l}{\textbf{Dátum stretnutia:}} & & 27.11.2020 \\
+            \multicolumn{3}{l}{\textbf{Čas stretnutia:}} & & 16:00 - 19:00 hod. \\
+            \multicolumn{3}{l}{\textbf{Prítomní:}} \\
+            & & vedúci: & & Ing. Juraj Petrík \\
+            & & členovia tímu: & & Bc. František Gič  \\
+            & & & & Bc. Oliver Kanát \\
+            & & & & Bc. Karin Maliniaková \\
+            & & & & Bc. Denisa Mensatorisová \\
+            & & & & Bc. Anton Rusňák \\
+            & & & & Bc. Vladimír Svitok \\
+            & & & & Bc. Kristián Toldy \\
+            \multicolumn{3}{l}{\textbf{Neprítomní:}} & & -\\
+            \multicolumn{3}{l}{\textbf{Zapisovateľ:}} & & Bc. František Gič \\
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Program:}
+    
+    \begin{enumerate}
+        \item Stantup
+        \item Vyriešenie nejasností, ktoré sa vyskytli po týždni šprintu
+    \end{enumerate}
+
+    \section*{Poznámky zo stretnutia:}
+
+    \begin{itemize}
+        \item Prešli sme si stav úloh a môžeme zhodnotiť, že polovica úloh je hotová, takže šprint by sme mali stihnúť, ak sa nevyskytnú nejaké väčšie problémy.
+        \begin{itemize}
+            \item Implement text upload endpoint - začaté
+            \item Create background task for text and file comparison - začaté
+            \item Implement universal document model - začaté
+            \item Update existing files upload to use new document model
+            \item Implement text extraction method from image files - začaté
+            \item Implement text extraction method for different types of text files - začaté
+            \item Find out what the heck Juro’s done - nezačaté
+            \item Úlohy súvisiace s Elasticsearchom sa ešte nezačali robiť kvôli nejasnostiam            
+        \end{itemize}
+        \item Vyriešili sme nejasnosti týkajúce sa najmä Elasticsearchu. 
+        \item Spresnili sme požiadavky product ownera.
+    \end{itemize}
+
+\end{document}
