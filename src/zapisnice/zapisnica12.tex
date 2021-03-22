@@ -1,0 +1,80 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Zápisnica č. 12}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Stretnutie s vedúcim}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{lllll}
+            \multicolumn{3}{l}{\textbf{Dátum stretnutia:}} & & 17.2.2021 \\
+            \multicolumn{3}{l}{\textbf{Čas stretnutia:}} & & 18:00 - 21:00 hod. \\
+            \multicolumn{3}{l}{\textbf{Prítomní:}} \\
+            & & vedúci: & & Ing. Juraj Petrík \\
+            & & členovia tímu: & & Bc. František Gič  \\
+            & & & & Bc. Oliver Kanát \\
+            & & & & Bc. Karin Maliniaková \\
+            & & & & Bc. Denisa Mensatorisová \\
+            & & & & Bc. Anton Rusňák \\
+            & & & & Bc. Vladimír Svitok \\
+            & & & & Bc. Kristián Toldy \\
+            \multicolumn{3}{l}{\textbf{Neprítomní:}} & & -\\
+            \multicolumn{3}{l}{\textbf{Zapisovateľ:}} & & Bc. Karin Maliniaková \\
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Program:}
+
+    \begin{enumerate}
+        \item Upresnenie čo je hotové po ZS
+        \item Zadanie cieľov na LS
+        \item Identifikovanie priorít na LS
+        \item Doplnenie backlogu
+        \item Plánovanie šprintu
+    \end{enumerate}
+
+    \section*{Zosumarizovanie ZS}
+
+        \textnormal {Hneď na začiatku prvého stretnutia v LS s vedúcim nášho tímového projektu sme si upresnili čo všetko sa v ZS spravili, ktoré ciele sme naplnili a naopak, čo bude potrebné v najbližšch týždňoch prioritne dorobiť. }
+        \textnormal {Po ZS zostalo pár úloh, ktoré sa identifikovali pri prezentácii projektu na poslednom stretnutí v ZS. Tieto úlohy sme sa rozhodli označiť ako úlohy s najvyššou prioritou a budeme sa im venovať hneď na začiatku. }
+
+    \section*{Ciele na LS}
+
+        \textnormal {S product ownerom sme si upresnilli ciele na LS, čo chceme mať na konci hotové. Všetky ciele sme zapísali do dokumentácii a budeme sa nimi riadiť celý semester.}
+
+    \section*{Backlog a plánovanie šprintu}
+        \textnormal {Na základe cieľov na LS a identifikovaných nedostatkov zo ZS sme doplnili backlog o úlohy. Následne sme naplánovali šprint, tkroý sme odštartovali na dva týždne. }
+
+    \begin{itemize}
+    \item \textbf {PW - Prezentačný web} 
+        \begin{itemize}
+            \item PW17 - CI/CD Autodeploy \textbf {@fero}
+        \end{itemize}
+    \item \textbf {FRON - Frontend} 
+        \begin{itemize}
+            \item FRON29 - Make all views responsive \textbf {@dena}
+            \item FRON30 - CI/CD Autodeploy \textbf {@fero}
+            \item FRON28 - Fetch pending submission in intervals \textbf {@tono}
+        \end{itemize}  
+    \item \textbf {BE - Backend} 
+        \begin{itemize}
+            \item BE65 - Parallel language checking \textbf {@karin}
+            \item BE68 - Limit file upload \textbf {@kiko}
+            \item BE70 - Dockerization \textbf {@oliver}
+            \item BE64 - Fix incorrect comparison result \textbf {@vlado}
+        \end{itemize}        
+    \end{itemize}
+
+\end{document}

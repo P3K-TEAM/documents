@@ -1,0 +1,80 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Zápisnica č. 13}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Stretnutie v tíme}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{lllll}
+            \multicolumn{3}{l}{\textbf{Dátum stretnutia:}} & & 1.3.2021 \\
+            \multicolumn{3}{l}{\textbf{Čas stretnutia:}} & & 16:00 - 18:00 hod. \\
+            \multicolumn{3}{l}{\textbf{Prítomní:}} \\
+            & & & & Bc. František Gič  \\
+            & & & & Bc. Oliver Kanát \\
+            & & & & Bc. Karin Maliniaková \\
+            & & & & Bc. Denisa Mensatorisová \\
+            & & & & Bc. Anton Rusňák \\
+            & & & & Bc. Vladimír Svitok \\
+            & & & & Bc. Kristián Toldy \\
+            \multicolumn{3}{l}{\textbf{Neprítomní:}} & & -\\
+            \multicolumn{3}{l}{\textbf{Zapisovateľ:}} & & Bc. Karin Maliniaková \\
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Program:}
+
+    \begin{enumerate}
+        \item Standup
+    \end{enumerate}
+
+    \section*{Standup}
+
+    \begin{itemize}
+        \item \textbf {@fero}
+        \begin{itemize}
+            \item Svoje úlohy má hotové, úspešne sa podarilo dokončiť a mergnuť CI pipeline s autodeployom v PW a RE repách
+            \item Pomáha s úlohami ostatným členom tímu, keď niekto potrebuje
+        \end{itemize}
+        \item \textbf {@tono}
+        \begin{itemize}
+            \item úlohu má hotovú
+            \item problém s rozbehnutím backendu na Win, čo je potrebné pre otestovanie, inak je úloha hotová
+        \end{itemize}
+        \item \textbf {@dena}
+        \begin{itemize}
+            \item Práca na responzitive, opravovanie detailov
+        \end{itemize}
+        \item \textbf {@karin}
+        \begin{itemize}
+            \item vytvorenený fork bastie/w2ni18n repozitáru na náš repozitár 
+            \item zaseknutie sa v našom kóde - kktorú funkciu treba upraviť
+        \end{itemize}
+        \item \textbf {@vlado}
+        \begin{itemize}
+            \item úloha dokončená aj otestovaná, ešte čaká na CR
+        \end{itemize}
+        \item \textbf {@oliver}
+        \begin{itemize}
+            \item práca na dokerizácii, čaká na CR
+        \end{itemize}
+        \item \textbf {@kiko}
+        \begin{itemize}
+            \item dokončovanie úlohy, takisto problém s rozbehaním backendu na Win
+            \item potrebná konzultácia s niekym z členou tímu
+        \end{itemize}
+    \end{itemize}    
+
+\end{document}

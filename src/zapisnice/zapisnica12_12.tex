@@ -1,0 +1,83 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Zápisnica č. 12}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Stretnutie v tíme}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{lllll}
+            \multicolumn{3}{l}{\textbf{Dátum stretnutia:}} & & 22.2.2021 \\
+            \multicolumn{3}{l}{\textbf{Čas stretnutia:}} & & 16:00 - 18:00 hod. \\
+            \multicolumn{3}{l}{\textbf{Prítomní:}} \\
+            & & & & Bc. František Gič  \\
+            & & & & Bc. Oliver Kanát \\
+            & & & & Bc. Karin Maliniaková \\
+            & & & & Bc. Denisa Mensatorisová \\
+            & & & & Bc. Anton Rusňák \\
+            & & & & Bc. Vladimír Svitok \\
+            & & & & Bc. Kristián Toldy \\
+            \multicolumn{3}{l}{\textbf{Neprítomní:}} & & -\\
+            \multicolumn{3}{l}{\textbf{Zapisovateľ:}} & & Bc. Karin Maliniaková \\
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Program:}
+
+    \begin{enumerate}
+        \item Standup
+    \end{enumerate}
+
+    \section*{Standup}
+
+    \begin{itemize}
+        \item \textbf {@fero}
+        \begin{itemize}
+            \item Práca na tasku, ktorý by mal naimplementovať pipeline v našom PW a FE repe, ktoré by vybuildili a uploadli subory na nas produkcny web, aby sme to nemuseli robit manualne.
+            \item Začal lokálne robiť na tej pipeline, číta rozdiely medzi gitlab a github pipelines, kedže skúsenosť má zatiaľ len v gitlabe.
+        \end{itemize}
+        \item \textbf {@tono}
+        \begin{itemize}
+            \item Robí na tasku implementácie spinner-u a fetch-u na result page, zatiaľ veľmi nepokročil
+        \end{itemize}
+        \item \textbf {@dena}
+        \begin{itemize}
+            \item Práca na responzitive
+            \item page Home a Upload sú hotové, ostáva ešte Result a Document page
+        \end{itemize}
+        \item \textbf {@karin}
+        \begin{itemize}
+            \item práca na Parallel language checking
+            \item nejasnosti v zadaní úlohy
+        \end{itemize}
+        \item \textbf {@vlado}
+        \begin{itemize}
+            \item práca na greedy string tiling
+            \item má hotový greedy string tiling avšak potrebuje dohodnúť pár vecí - na to porovnavanie, od akej dĺžky zhody znakov chceme aby sa to rátalo ako podobnosť, ak je string 'abcdef' a string 'deabcf', keď dám najkratší možný 2 tak by vezme len 'abc' a 'de'. treba nejaku rozumnu hodnotu na to
+            \item ďalej je potrebné tie intervali - aké su tieto podobnosti kam sa vlastne maju ukladať, ako sa má počítať tá podobnosť (napr. zoberiem dĺžku toho podobneho textu a len vypočítam koľko to je %  z celeho textu?
+        \end{itemize}
+        \item \textbf {@oliver}
+        \begin{itemize}
+            \item práca na dokerizácii, zatiaľ žiadne výsledky
+        \end{itemize}
+        \item \textbf {@kiko}
+        \begin{itemize}
+            \item práca na limitovaní Upload súborov
+            \item zisťovanie čo treba spraviť - kvôli bezpečnosti treba requesty handlovať aj na backende a kvôli použiteľnosti urobiť aj na frontende chybové hlášky
+            \item zatiaľ teda nemá žiadny problém, ale bude potrebovať neskôr pomôcť s testami - ako posielať testovacie requesty
+        \end{itemize}
+    \end{itemize}    
+
+\end{document}
