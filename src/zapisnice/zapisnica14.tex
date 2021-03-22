@@ -1,0 +1,72 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Zápisnica č. 14}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Stretnutie s vedúcim}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{lllll}
+            \multicolumn{3}{l}{\textbf{Dátum stretnutia:}} & & 3.3.2021 \\
+            \multicolumn{3}{l}{\textbf{Čas stretnutia:}} & & 18:00 - 21:00 hod. \\
+            \multicolumn{3}{l}{\textbf{Prítomní:}} \\
+            & & vedúci: & & Ing. Juraj Petrík \\
+            & & členovia tímu: & & Bc. František Gič  \\
+            & & & & Bc. Oliver Kanát \\
+            & & & & Bc. Karin Maliniaková \\
+            & & & & Bc. Denisa Mensatorisová \\
+            & & & & Bc. Anton Rusňák \\
+            & & & & Bc. Vladimír Svitok \\
+            & & & & Bc. Kristián Toldy \\
+            \multicolumn{3}{l}{\textbf{Neprítomní:}} & & -\\
+            \multicolumn{3}{l}{\textbf{Zapisovateľ:}} & & Bc. Karin Maliniaková \\
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Program:}
+
+    \begin{enumerate}
+        \item Sprint review
+        \item Retrospektíva
+        \item Plánovanie šprintu
+    \end{enumerate}
+
+    \section*{Sprint review}
+
+        \textnormal {Všetci členovia tímu odprezentovali svoje úlohy, čo spravili a aj ako spravili. Dve úlohy sa žiaľ nepodarilo úspešne dokončiť a bude potrebné ich dorobiť v nasledujúcom šprinte.}
+
+    \section*{Retrospektíva}
+
+        \begin{itemize}
+            \item {Stop doing:}
+                \begin{itemize}
+                    \item {Musíme prestať robiť veci na poslednú chvíľu. Vzniká zbytpčne stres tesne pred skončením šprintu.}
+                \end{itemize}
+            \item {Start doing:}
+                \begin{itemize}
+                    \item {Všetci členovia tímu by mali robit CR, nie len niektorí.}
+                    \item {Rozbehať BE, pomocou dockeru.}
+                    \item {Pri dizajnových taskoch, robiť dizajn review až potom začať s implementáciou. Vyhneme sa tak zbytočným nedorozumeniam.}
+                    \item {Postup pri práci na tasku -> task = kodenie + integrácia + testovanie + code review. Dodržiavať to a nerobiť len kódenie.}
+                \end{itemize}
+            \item {Continue doing:}
+                \begin{itemize}
+                    \item {Tímové stretnutia sú po zmene omnoho efektívnejšie, takže pokračujeme aj ďalej.}
+                    \item {Učiť sa nové veci.}
+                    \item {Veľmi dobré CR od Fera.}
+                \end{itemize}
+        \end{itemize}
+
+\end{document}

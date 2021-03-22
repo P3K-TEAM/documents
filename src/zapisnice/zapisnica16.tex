@@ -1,0 +1,73 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Zápisnica č. 16}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Stretnutie s vedúcim}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{lllll}
+            \multicolumn{3}{l}{\textbf{Dátum stretnutia:}} & & 17.3.2021 \\
+            \multicolumn{3}{l}{\textbf{Čas stretnutia:}} & & 18:00 - 21:00 hod. \\
+            \multicolumn{3}{l}{\textbf{Prítomní:}} \\
+            & & vedúci: & & Ing. Juraj Petrík \\
+            & & členovia tímu: & & Bc. František Gič  \\
+            & & & & Bc. Oliver Kanát \\
+            & & & & Bc. Karin Maliniaková \\
+            & & & & Bc. Denisa Mensatorisová \\
+            & & & & Bc. Anton Rusňák \\
+            & & & & Bc. Vladimír Svitok \\
+            & & & & Bc. Kristián Toldy \\
+            \multicolumn{3}{l}{\textbf{Neprítomní:}} & & -\\
+            \multicolumn{3}{l}{\textbf{Zapisovateľ:}} & & Bc. Karin Maliniaková \\
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Program:}
+
+    \begin{enumerate}
+        \item Sprint review
+        \item Retrospektíva
+        \item Plánovanie šprintu
+    \end{enumerate}
+
+    \section*{Sprint review}
+
+        \textnormal {Všetci členovia tímu odprezentovali svoje úlohy, čo spravili a aj ako spravili. Dve úlohy je potrebné ešte dopracovať, preto ostávajú aj na ďalší šprint.}
+
+    \section*{Retrospektíva}
+
+        \begin{itemize}
+            \item {Stop doing:}
+                \begin{itemize}
+                    \item {Špecifikovať úlohy v polovici šprintu.}
+                    \item {Neblokovať iných členov tímu s úlohou, ktorá závisí aj od iných taskov.}
+                    \item {Príliš optimistické odhady, pri niektorých úlohách.}
+                    \item {Integrovať priebežne počas šprintu, nie až na konci. Potom vznikajú problémy na konci šprintu a už nie je dostatok času na ich vyriešenie.}
+                \end{itemize}
+            \item {Start doing:}
+                \begin{itemize}
+                    \item {Pri integrácii sa uistiť, že prebehla správne a všeko funguje. Nenechávať rozbité veci bez opravenia.}
+                    \item {Pri CR vždy dvaja reviewers.}
+                    \item {Ak niekto dá pull request na svoj task až v posledný deň šprintu nebude mu schválený.}
+                    \item {Pushovať kód aj keď je len v progrese a nie je ešte funkčný.}
+                \end{itemize}
+            \item {Continue doing:}
+                \begin{itemize}
+                    \item {Detailné CR. Radšej viac komentov ako na niečo zabudnúť.}
+                \end{itemize}
+        \end{itemize}
+
+\end{document}
