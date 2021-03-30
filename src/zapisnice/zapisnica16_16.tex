@@ -1,0 +1,78 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Zápisnica č. 16}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Stretnutie v tíme}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{lllll}
+            \multicolumn{3}{l}{\textbf{Dátum stretnutia:}} & & 22.3.2021 \\
+            \multicolumn{3}{l}{\textbf{Čas stretnutia:}} & & 16:00 - 18:00 hod. \\
+            \multicolumn{3}{l}{\textbf{Prítomní:}} \\
+            & & & & Bc. František Gič  \\
+            & & & & Bc. Oliver Kanát \\
+            & & & & Bc. Karin Maliniaková \\
+            & & & & Bc. Denisa Mensatorisová \\
+            & & & & Bc. Anton Rusňák \\
+            & & & & Bc. Vladimír Svitok \\
+            & & & & Bc. Kristián Toldy \\
+            \multicolumn{3}{l}{\textbf{Neprítomní:}} & & -\\
+            \multicolumn{3}{l}{\textbf{Zapisovateľ:}} & & Bc. Karin Maliniaková \\
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Program:}
+
+    \begin{enumerate}
+        \item Standup
+    \end{enumerate}
+
+    \section*{Standup}
+
+    \begin{itemize}
+        \item \textbf {@fero}
+        \begin{itemize}
+            \item Začal robiť redizajn komponentov + začal úremýšľať ako treeshaknť font awesome v našom bundli. 
+        \end{itemize}
+        \item \textbf {@tono}
+        \begin{itemize}
+            \item Zatiaľ sa k ničomu nedostal. 
+        \end{itemize}
+        \item \textbf {@dena}
+        \begin{itemize}
+            \item Začala robiť na ulohe "Refactor character ranges on document detail and diff endpoints"
+            \item Už urobila dva menšie tasky - prelad errorových hlášok a provide document content on document detail, ktoré čakajú na approve. 
+        \end{itemize}
+        \item \textbf {@karin}
+        \begin{itemize}
+            \item Doroenie zápisníc, aby sme mali všetko na webe. 
+            \item Zisťovanie si informácií, ako urobiť druhý task. 
+        \end{itemize}
+        \item \textbf {@vlado}
+        \begin{itemize}
+            \item Robil improve na gst., ktoré ešte nie je dokončené. Ešte musí zapracovať komentáre. 
+        \end{itemize}
+        \item \textbf {@oliver}
+        \begin{itemize}
+            \item Robil CR ostatným. Svojte tasky má hotové a čaká na CR. 
+        \end{itemize}
+        \item \textbf {@kiko}
+        \begin{itemize}
+            \item Pracuje na endpointoch pre unikatne id. 
+        \end{itemize}
+    \end{itemize}    
+
+\end{document}
