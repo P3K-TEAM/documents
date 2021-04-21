@@ -1,0 +1,81 @@
+\documentclass{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+% Title
+\newcommand{\documenttitle}
+{Zápisnica č. 18}
+
+% Subtitle
+\newcommand{\documentsubtitle}
+{Stretnutie s vedúcim}
+
+\begin{document}
+
+    \include{title-page}
+
+    \begin{table}[h]
+        \begin{tabular}{lllll}
+            \multicolumn{3}{l}{\textbf{Dátum stretnutia:}} & & 31.3.2021 \\
+            \multicolumn{3}{l}{\textbf{Čas stretnutia:}} & & 18:00 - 21:00 hod. \\
+            \multicolumn{3}{l}{\textbf{Prítomní:}} \\
+            & & vedúci: & & Ing. Juraj Petrík \\
+            & & členovia tímu: & & Bc. František Gič  \\
+            & & & & Bc. Oliver Kanát \\
+            & & & & Bc. Karin Maliniaková \\
+            & & & & Bc. Denisa Mensatorisová \\
+            & & & & Bc. Anton Rusňák \\
+            & & & & Bc. Vladimír Svitok \\
+            & & & & Bc. Kristián Toldy \\
+            \multicolumn{3}{l}{\textbf{Neprítomní:}} & & -\\
+            \multicolumn{3}{l}{\textbf{Zapisovateľ:}} & & Bc. Karin Maliniaková \\
+        \end{tabular}
+        \label{tab:grades}
+    \end{table}
+
+    \section*{Program:}
+
+    \begin{enumerate}
+        \item Sprint review
+        \item Retrospektíva
+        \item Plánovanie šprintu
+    \end{enumerate}
+
+    \section*{Sprint review}
+
+        \textnormal {Všetci členovia tímu odprezentovali svoje úlohy, čo spravili a aj ako spravili.}
+
+        \textnormal {@vlado - dokončil úlohu z predchádzajúceho šprintu }
+        \textnormal {@tono - Hotové scrollovanie na result page.}
+        \textnormal {@dena - jednu úlohu nestihla, ešte zostáva na code review, kde treba dopracovať niektoré komentáre}
+        \textnormal {@oliver - všetko hotové}
+        \textnormal {@karin - všetko hotové}
+        \textnormal {@kiko - hotové ale ešte nie sú mergnute na githube, takže sa to presúv do ďalšieho tasku}
+        \textnormal {@fero - jeden task nestihol - JSON structure}
+
+    \section*{Retrospektíva}
+
+        \begin{itemize}
+            \item {Stop doing:}
+                \begin{itemize}
+                    \item {Neskoré CR - niekedy sa veľmi dlho čaká na approve alebo na komentáre na CR}
+                    \item {Vytváranie Pull reguestu na poslednú chvílu v den ukoncenia šprintu}
+                    \item {Nerobia všetci členovia CR}
+                \end{itemize}
+            \item {Start doing:}
+                \begin{itemize}
+                    \item {Viac oceňovať prácu druhých členov tímu aj ich snahu robiť niečo nové}
+                    \item {robiť CR aj keď sa nevyznáme v tom čo je obsahom tasku, aspoň sa naučíme niečo nové}
+                    \item {nenechávanie si veci na poslednú chvíľu}
+                \end{itemize}
+            \item {Continue doing:}
+                \begin{itemize}
+                    \item {dokončiť už úlohy poriadne aby už všetko bolo funkčné}
+                \end{itemize}
+        \end{itemize}
+
+    \section*{Plánovanie šprintu}
+        \textnormal {Máme naplánovaný šprint, kde sme sa dohodli, že podokončujeme včetky problémy a na konci šprintu dodáme funkčnú verziu pripravenú na akceptačné testovanie.}
+\end{document}
